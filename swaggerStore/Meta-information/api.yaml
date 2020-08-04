@@ -1,6 +1,6 @@
 id:
   providerName: admin
-  apiName: Swagger Petstore
+  apiName: SwaggerPetstore
   version: 1.0.0
 type: HTTP
 context: /SwaggerPetstore/1.0.0
