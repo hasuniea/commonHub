@@ -34,7 +34,7 @@ host: petstore.swagger.io
 info:
   license:
     name: MIT
-  title: SwaggerPetstore
+  title: Pet
   version: 1.0.0
 paths:
   /pets:
