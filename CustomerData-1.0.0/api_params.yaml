@@ -1,0 +1,10 @@
+environments:
+  - name: dev
+    endpoints:
+      production:
+      sandbox:
+
+vcs:
+  import:
+    update: true
+    preserveProvider: true
