@@ -1,0 +1,116 @@
+openapi: 3.0.1
+info:
+  title: FlightReservation
+  version: 1.0.0
+servers:
+ -
+  url: /
+security:
+ -
+  default: []
+paths:
+  /getcustomers:
+    get:
+      description: Return all the customers
+      responses:
+        "200":
+          description: OK. List of APIs is returned.
+          content: {}
+        "304":
+          description: Not Modified. Empty body because the client has already the latest version of the requested resource.
+          content: {}
+        "406":
+          description: Not Acceptable. The requested media type is not supported
+          content: {}
+      security:
+       -
+        default: []
+      x-auth-type: Application & Application User
+      x-throttling-tier: Unlimited
+  /customer/{cityId}:
+    get:
+      description: Get details of customers by city ID
+      parameters:
+       -
+        name: cityId
+        in: path
+        description: City Id
+        required: true
+        schema:
+          type: string
+          format: string
+      responses:
+        "200":
+          description: OK Requested routs will be returned
+          content: {}
+        "304":
+          description: Not Modified. Empty body because the client has already the latest version of the requested resource.
+          content: {}
+        "404":
+          description: Not Found. Requested API does not exist.
+          content: {}
+        "406":
+          description: Not Acceptable. The requested media type is not supported
+          content: {}
+      security:
+       -
+        default: []
+      x-auth-type: Application & Application User
+      x-throttling-tier: Unlimited
+  /nonstop-tickets:
+    get:
+      description: Return a list of available non stop flight lists
+      responses:
+        "200":
+          description: OK. List of APIs is returned.
+          content: {}
+        "304":
+          description: Not Modified. Empty body because the client has already the latest version of the requested resource.
+          content: {}
+        "406":
+          description: Not Acceptable. The requested media type is not supported
+          content: {}
+      security:
+       -
+        default: []
+      x-auth-type: Application & Application User
+      x-throttling-tier: Unlimited
+  /popular-routs/{cityId}:
+    get:
+      description: Get details of popular routs by city Id
+      parameters:
+       -
+        name: cityId
+        in: path
+        description: City Id
+        required: true
+        schema:
+          type: string
+          format: string
+      responses:
+        "200":
+          description: OK Requested routs will be returned
+          content: {}
+        "304":
+          description: Not Modified. Empty body because the client has already the latest version of the requested resource.
+          content: {}
+        "404":
+          description: Not Found. Requested API does not exist.
+          content: {}
+        "406":
+          description: Not Acceptable. The requested media type is not supported
+          content: {}
+      security:
+       -
+        default: []
+      x-auth-type: Application & Application User
+      x-throttling-tier: Unlimited
+components:
+  securitySchemes:
+    default:
+      type: oauth2
+      flows:
+        implicit:
+          authorizationUrl: https://test.com
+          scopes: {}
+          x-scopes-bindings: {}
