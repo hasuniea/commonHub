@@ -2,9 +2,7 @@ environments:
   - name: dev
     endpoints:
       production:
-        url: https://run.mocky.io/v3/3c8f2964-0389-4ea9-b71a-3ba6290ca09d
       sandbox:
-         url: https://run.mocky.io/v3/a0a22df6-255c-4e6e-b213-d9c625270ddb
 
 deploy:
   import:
