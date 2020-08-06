@@ -1,0 +1,92 @@
+id:
+  providerName: admin
+  apiName: CustomerData
+  version: 1.0.0
+  id: 0
+uuid: 00b3dc40-9d88-4941-8fa4-70797c658e2f
+type: HTTP
+context: /customer/1.0.0/1.0.0
+contextTemplate: /customer/1.0.0/{version}
+tags: []
+documents: []
+lastUpdated: Aug 6, 2020 12:07:04 PM
+availableTiers:
+ -
+  name: Gold
+  displayName: Gold
+  description: Allows 5000 requests per minute
+  requestsPerMin: 5000
+  requestCount: 5000
+  unitTime: 1
+  timeUnit: min
+  tierPlan: FREE
+  stopOnQuotaReached: true
+ -
+  name: Silver
+  displayName: Silver
+  description: Allows 2000 requests per minute
+  requestsPerMin: 2000
+  requestCount: 2000
+  unitTime: 1
+  timeUnit: min
+  tierPlan: FREE
+  stopOnQuotaReached: true
+availableSubscriptionLevelPolicies: []
+uriTemplates: []
+apiHeaderChanged: false
+apiResourcePatternsChanged: false
+status: CREATED
+visibility: public
+gatewayLabels: []
+endpointSecured: false
+endpointAuthDigest: false
+transports: http,https
+advertiseOnly: false
+apiOwner: admin
+subscriptionAvailability: current_tenant
+corsConfiguration:
+  corsConfigurationEnabled: false
+  accessControlAllowOrigins:
+   - '*'
+  accessControlAllowCredentials: false
+  accessControlAllowHeaders:
+   - authorization
+   - Access-Control-Allow-Origin
+   - Content-Type
+   - SOAPAction
+   - apikey
+   - testKey
+  accessControlAllowMethods:
+   - GET
+   - PUT
+   - POST
+   - DELETE
+   - PATCH
+   - OPTIONS
+endpointConfig: '{"endpoint_type":"http","sandbox_endpoints":{"url":"https://run.mocky.io/v3/a0a22df6-255c-4e6e-b213-d9c625270ddb"},"production_endpoints":{"url":"https://run.mocky.io/v3/a0a22df6-255c-4e6e-b213-d9c625270ddb"}}'
+responseCache: Disabled
+cacheTimeout: 300
+implementation: ENDPOINT
+authorizationHeader: Authorization
+scopes: []
+isDefaultVersion: false
+isPublishedDefaultVersion: false
+keyManagers:
+ - all
+environments:
+ - Production and Sandbox
+createdTime: "1596695823770"
+additionalProperties: {}
+monetizationProperties: {}
+isMonetizationEnabled: false
+environmentList:
+ - SANDBOX
+ - PRODUCTION
+apiSecurity: oauth2,oauth_basic_auth_api_key_mandatory
+endpoints: []
+enableSchemaValidation: false
+apiCategories: []
+enableStore: true
+accessControl: all
+rating: 0.0
+isLatest: false

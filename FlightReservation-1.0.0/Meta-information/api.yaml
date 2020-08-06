@@ -1,0 +1,231 @@
+id:
+  providerName: admin
+  apiProductName: FlightReservation
+  version: 1.0.0
+  productId: 0
+uuid: 46340522-cd78-4b10-96a6-0d4cc5d1b979
+type: APIProduct
+productId: 5
+context: /flightres
+availableTiers:
+ -
+  name: Silver
+  displayName: Silver
+  description: Allows 2000 requests per minute
+  requestsPerMin: 2000
+  requestCount: 2000
+  unitTime: 1
+  timeUnit: min
+  tierPlan: FREE
+  stopOnQuotaReached: true
+ -
+  name: Gold
+  displayName: Gold
+  description: Allows 5000 requests per minute
+  requestsPerMin: 5000
+  requestCount: 5000
+  unitTime: 1
+  timeUnit: min
+  tierPlan: FREE
+  stopOnQuotaReached: true
+tags: []
+contextTemplate: /flightres/{version}
+visibility: public
+subscriptionAvailability: all_tenants
+state: PUBLISHED
+tenantDomain: carbon.super
+rating: "0.0"
+productResources:
+ -
+  apiName: CustomerData
+  apiId: 00b3dc40-9d88-4941-8fa4-70797c658e2f
+  apiIdentifier:
+    providerName: admin
+    apiName: CustomerData
+    version: 1.0.0
+    id: 0
+  productIdentifier:
+    providerName: admin
+    apiProductName: FlightReservation
+    version: 1.0.0
+    productId: 0
+  uriTemplate:
+    uriTemplate: /getcustomers
+    resourceURI: /getcustomers
+    httpVerb: GET
+    authType: Application & Application User
+    httpVerbs: []
+    authTypes: []
+    throttlingConditions: []
+    throttlingTier: Unlimited
+    throttlingTiers: []
+    scopes: []
+    mediationScripts: {}
+    id: 16
+    usedByProducts: []
+    amznResourceTimeout: 0
+  endpointConfig: '{"endpoint_type":"http","sandbox_endpoints":{"url":"https://run.mocky.io/v3/a0a22df6-255c-4e6e-b213-d9c625270ddb"},"production_endpoints":{"url":"https://run.mocky.io/v3/a0a22df6-255c-4e6e-b213-d9c625270ddb"}}'
+  endpointSecurityMap:
+    production:
+      enabled: false
+      additionalProperties: {}
+    sandbox:
+      enabled: false
+      additionalProperties: {}
+  inSequenceName: ""
+  outSequenceName: ""
+  faultSequenceName: ""
+ -
+  apiName: CustomerData
+  apiId: 00b3dc40-9d88-4941-8fa4-70797c658e2f
+  apiIdentifier:
+    providerName: admin
+    apiName: CustomerData
+    version: 1.0.0
+    id: 0
+  productIdentifier:
+    providerName: admin
+    apiProductName: FlightReservation
+    version: 1.0.0
+    productId: 0
+  uriTemplate:
+    uriTemplate: /bookings/{customerId}
+    resourceURI: /bookings/{customerId}
+    httpVerb: GET
+    authType: Application & Application User
+    httpVerbs: []
+    authTypes: []
+    throttlingConditions: []
+    throttlingTier: Unlimited
+    throttlingTiers: []
+    scopes: []
+    mediationScripts: {}
+    id: 17
+    usedByProducts: []
+    amznResourceTimeout: 0
+  endpointConfig: '{"endpoint_type":"http","sandbox_endpoints":{"url":"https://run.mocky.io/v3/a0a22df6-255c-4e6e-b213-d9c625270ddb"},"production_endpoints":{"url":"https://run.mocky.io/v3/a0a22df6-255c-4e6e-b213-d9c625270ddb"}}'
+  endpointSecurityMap:
+    production:
+      enabled: false
+      additionalProperties: {}
+    sandbox:
+      enabled: false
+      additionalProperties: {}
+  inSequenceName: ""
+  outSequenceName: ""
+  faultSequenceName: ""
+ -
+  apiName: FlightData
+  apiId: 638c5940-7fc3-4cb5-bb3a-c881153e78a0
+  apiIdentifier:
+    providerName: admin
+    apiName: FlightData
+    version: 1.0.0
+    id: 0
+  productIdentifier:
+    providerName: admin
+    apiProductName: FlightReservation
+    version: 1.0.0
+    productId: 0
+  uriTemplate:
+    uriTemplate: /cheapestflights
+    resourceURI: /cheapestflights
+    httpVerb: GET
+    authType: Application & Application User
+    httpVerbs: []
+    authTypes: []
+    throttlingConditions: []
+    throttlingTier: Unlimited
+    throttlingTiers: []
+    scopes: []
+    mediationScripts: {}
+    id: 19
+    usedByProducts: []
+    amznResourceTimeout: 0
+  endpointConfig: '{"endpoint_type":"http","sandbox_endpoints":{"url":"https://run.mocky.io/v3/d38bedf8-e5ef-44fd-aa97-77bcefac3959"},"production_endpoints":{"url":"https://run.mocky.io/v3/d38bedf8-e5ef-44fd-aa97-77bcefac3959"}}'
+  endpointSecurityMap:
+    production:
+      enabled: false
+      additionalProperties: {}
+    sandbox:
+      enabled: false
+      additionalProperties: {}
+  inSequenceName: ""
+  outSequenceName: ""
+  faultSequenceName: ""
+ -
+  apiName: FlightData
+  apiId: 638c5940-7fc3-4cb5-bb3a-c881153e78a0
+  apiIdentifier:
+    providerName: admin
+    apiName: FlightData
+    version: 1.0.0
+    id: 0
+  productIdentifier:
+    providerName: admin
+    apiProductName: FlightReservation
+    version: 1.0.0
+    productId: 0
+  uriTemplate:
+    uriTemplate: /nonstop-tickets
+    resourceURI: /nonstop-tickets
+    httpVerb: GET
+    authType: Application & Application User
+    httpVerbs: []
+    authTypes: []
+    throttlingConditions: []
+    throttlingTier: Unlimited
+    throttlingTiers: []
+    scopes: []
+    mediationScripts: {}
+    id: 20
+    usedByProducts: []
+    amznResourceTimeout: 0
+  endpointConfig: '{"endpoint_type":"http","sandbox_endpoints":{"url":"https://run.mocky.io/v3/d38bedf8-e5ef-44fd-aa97-77bcefac3959"},"production_endpoints":{"url":"https://run.mocky.io/v3/d38bedf8-e5ef-44fd-aa97-77bcefac3959"}}'
+  endpointSecurityMap:
+    production:
+      enabled: false
+      additionalProperties: {}
+    sandbox:
+      enabled: false
+      additionalProperties: {}
+  inSequenceName: ""
+  outSequenceName: ""
+  faultSequenceName: ""
+additionalProperties: {}
+environments:
+ - Production and Sandbox
+gatewayLabels: []
+enableSchemaValidation: false
+scopes: []
+monetizationProperties: {}
+isMonetizationEnabled: false
+apiSecurity: oauth2,oauth_basic_auth_api_key_mandatory
+transports: http,https
+responseCache: Disabled
+cacheTimeout: 300
+authorizationHeader: Authorization
+corsConfiguration:
+  corsConfigurationEnabled: false
+  accessControlAllowOrigins:
+   - '*'
+  accessControlAllowCredentials: false
+  accessControlAllowHeaders:
+   - authorization
+   - Access-Control-Allow-Origin
+   - Content-Type
+   - SOAPAction
+   - apikey
+   - testKey
+  accessControlAllowMethods:
+   - GET
+   - PUT
+   - POST
+   - DELETE
+   - PATCH
+   - OPTIONS
+accessControl: all
+apiCategories: []
+lastUpdated: Aug 6, 2020 12:15:00 PM
+createdTime: Aug 6, 2020 12:15:00 PM
+enableStore: false
